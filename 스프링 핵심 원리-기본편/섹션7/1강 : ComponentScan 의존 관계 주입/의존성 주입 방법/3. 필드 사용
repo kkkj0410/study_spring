@@ -1,0 +1,2 @@
+@Autowired private MemberRepository memberRepository;
+@Autowired private DiscountPolicy discountPolicy;
