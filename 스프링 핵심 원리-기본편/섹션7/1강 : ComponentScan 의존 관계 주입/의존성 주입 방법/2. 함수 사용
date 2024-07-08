@@ -1,0 +1,14 @@
+    private MemberRepository memberRepository;
+    private DiscountPolicy discountPolicy;
+
+    @Autowired
+    public void setMemberRepository(MemberRepository memberRepository) {
+        System.out.println("MemberRepository : " + memberRepository);
+        this.memberRepository = memberRepository;
+    }
+
+    @Autowired
+    public void setDiscountPolicy(DiscountPolicy discountPolicy) {
+        System.out.println("Discount : " + discountPolicy);
+        this.discountPolicy = discountPolicy;
+    }
