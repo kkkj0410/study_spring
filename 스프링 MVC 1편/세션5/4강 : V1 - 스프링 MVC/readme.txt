@@ -1,0 +1,3 @@
+- 스프링은 MVC에 대한 기능을 제공한다.
+- FrontController는 스프링에서 구현되어있다.
+- 따라서 사용자는 FrontController에 대한 개별 Contoller를 구현하기만 하면 된다.
