@@ -17,14 +17,11 @@
             - +
             - [member.id](http://member.id) ≠ team.id인 데이터는 빈 칸을 null로 두고 테이블 생성
             
-            ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/9a0c0d89-33bc-42a9-96fd-4b51064a7a84/123b495f-7114-4f6e-bcbf-a24fbac8efb0/Untitled.png)
-            
     - 세타 조인
         - 내부 조인은 데이터가 같은(=) 조건만을 사용했음
         - 세타 조인은 =뿐만 아니라, >, <, ≥, ≤ 등 다양한 조건을 추가 가능
         - 예시
-            - [member.id](http://member.id) > team.id인 데이터만 새로 만들라
-
+            - member.id > team.id인 데이터만 새로 만들라
 
 
 
