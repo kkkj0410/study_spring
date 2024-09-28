@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<!--재료가 되는 HTML 파일 가져오기 -->
+<!--title, link는 base파일의 title,links와 매칭됨 -->
+<!--매칭된 base 파일의 title, links 요소는 없어지고, layoutMain의 요소로 대체되게함(replace)-->
+<head th:replace="template/layout/base :: common_header(~{::title},~{::link})">
+    <title>메인 타이틀</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/themes/smoothness/jquery-ui.css}">
+</head>
+<body>
+메인 컨텐츠
+</body>
+</html>
