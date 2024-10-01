@@ -1,0 +1,9 @@
+  <!-- single checkbox -->
+  <div>판매 여부</div>
+  <div>
+      <div class="form-check">
+		      <!--th:field는 히든 필드를 자동으로 만들어준다. -->
+          <input type="checkbox" id="open" th:field = "*{open}" name="open" class="form-check-input">
+          <label for="open" class="form-check-label">판매 오픈</label>
+      </div>
+  </div>
