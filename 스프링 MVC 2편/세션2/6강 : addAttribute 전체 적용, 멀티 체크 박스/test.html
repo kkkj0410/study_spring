@@ -1,0 +1,23 @@
+<!-- multi checkbox -->
+<div>
+    <div>등록 지역</div>
+    
+    
+    <!-- th:each : 해당 리스트 원소를 돌림      -->
+    <div th:each="region : ${regions}" class="form-check form-check-inline">
+    
+    
+        <!-- !주의 : *{regions}는 ${item.regions}     -->
+        <!-- 동적 생성이므로, 각각의 input id는 regions1, regions2, ...으로 설정됨      -->
+        <input type="checkbox" th:field="*{regions}" th:value="${region.key}"
+               class="form-check-input">
+               
+               
+        <!-- th:for : 지정한 대상과 매칭      -->
+        <!-- #ids.prev('') : ''대상과 같은 이름으로 변환함      -->
+        <label th:for="${#ids.prev('regions')}"
+               th:text="${region.value}" class="form-check-label">서울</label>
+   
+   
+    </div>
+</div>
