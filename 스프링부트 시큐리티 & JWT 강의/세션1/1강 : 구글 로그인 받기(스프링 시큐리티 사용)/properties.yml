@@ -1,0 +1,11 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client_id: SECRET
+            client_secret: SECRET2
+            scope:
+            - email
+            - profile
