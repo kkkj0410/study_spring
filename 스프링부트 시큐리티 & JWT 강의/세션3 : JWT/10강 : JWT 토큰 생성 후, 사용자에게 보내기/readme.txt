@@ -1,0 +1,6 @@
+- AuthenticationManager 함수
+    - 사용자가 등록돼있는 회원인지 확인
+    - 등록돼있다면, 해당 사용자 정보를 return
+- successfulAuthentication 함수
+    - 사용자가 로그인에 성공했다면 실행되는 함수
+    - 해당 함수에서 JWT 토큰 생성후 사용자에게 전달
