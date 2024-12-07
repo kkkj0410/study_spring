@@ -1,0 +1,12 @@
+### <요약>
+- fetch()
+    - 리스트 조회
+    - (패치 조인이 아님)
+- fetchOne()
+    - 단 건 조회
+- fetchFirst()
+    - limit(1).fechOne()
+- fetchResult()
+    - total count 쿼리
+- fetchCount()
+    - count 수 조회
