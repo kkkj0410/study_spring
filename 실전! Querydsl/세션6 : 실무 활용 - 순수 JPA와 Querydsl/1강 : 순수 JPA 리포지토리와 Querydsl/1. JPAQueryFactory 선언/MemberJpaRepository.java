@@ -1,7 +1,7 @@
-private final EntityManager em;
-private final JPAQueryFactory queryFactory;
+    private final EntityManager em;
+    private final JPAQueryFactory queryFactory;
 
-public MemberJpaRepository(EntityManager em){
-    this.em = em;
-    this.queryFactory = new JPAQueryFactory(em);
-}
+    public MemberJpaRepository(EntityManager em, JPAQueryFactory queryFactory){
+        this.em = em;
+        this.queryFactory = queryFactory;
+    }
